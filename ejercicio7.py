@@ -1,3 +1,7 @@
+"""
+Hacer un programa que lea un número entero y como resultado mostrar su correspondiente en notación binaria.
+"""
+
 numeroACombertir = int(input('Ingresa un número: '))
 notacionBinaria = []
 
