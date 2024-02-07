@@ -32,4 +32,4 @@ while(controlador):
             print("Seleccionaste la opcion 3".center(50, "*"))
         case 4:
             print("Saliste del programa!".center(50, "*"))
-            break
+            controlador = False
