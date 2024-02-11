@@ -5,14 +5,11 @@ Se debe pedir un número el cuál representa el número de niveles. En el ejempl
  *****
 *******
 """
-# recibe por parametro el numero de asteristicos
-def asteriscos(altura):
+# imput para ingresar la altura de la piramide
+altura_piramide = int(input("Ingrese la altura que va a tener la piramide: "))
 
-    asteriscos = 1
-    columnas = altura * 2 - 1
-    for fila in range(1, altura + 1):
-        espacios = (columnas - asteriscos)
-        print(espacios * " " + asteriscos * "*" + espacios * " ")
-        asteriscos += 2
+def piramide(altura):
+    for i in range(altura):
+        print(" " * (altura - i - 1) + "*" * (2 * i + 1))
 
-asteriscos(5)
+piramide(altura_piramide)
